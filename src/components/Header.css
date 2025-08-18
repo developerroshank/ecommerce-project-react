@@ -35,6 +35,10 @@
   color: white;
 }
 
+.orders-link.active {
+  text-decoration: underline;
+}
+
 .header .header-link:hover {
   border: 1px solid white;
 }
