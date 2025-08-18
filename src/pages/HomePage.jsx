@@ -5,6 +5,8 @@ import './HomePage.css'
 export const HomePage = () => {
   return (
     <>
+      <title>Ecommerce Project</title>
+
       <Header />
 
       <div className="home-page">

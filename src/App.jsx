@@ -1,15 +1,14 @@
 import React from 'react'
-import { HomePage } from './pages/HomePage'
 import { Route, Routes } from 'react-router'
+import { HomePage } from './pages/HomePage'
+import { CheckoutPage } from './pages/CheckoutPage'
 
 const App = () => {
   return (
     <>
-
-
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/checkout' element={<div>test checkout page</div>} />
+        <Route path='/checkout' element={<CheckoutPage />} />
       </Routes>
     </>
   )
