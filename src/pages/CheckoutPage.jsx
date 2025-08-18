@@ -6,6 +6,8 @@ import './checkout/CheckoutPage.css'
 export const CheckoutPage = () => {
   return (
     <>
+      <link rel="icon" type="image/svg+xml" href="/images/icons/cart-icon.png" />
+
       <title>Checkout</title>
 
       <div className="checkout-header">

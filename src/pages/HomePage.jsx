@@ -5,6 +5,8 @@ import './HomePage.css'
 export const HomePage = () => {
   return (
     <>
+      <link rel="icon" type="image/svg+xml" href="/images/icons/home-icon.png" />
+
       <title>Ecommerce Project</title>
 
       <Header />
