@@ -18,7 +18,7 @@ export const CheckoutPage = () => {
           </div>
 
           <div className="checkout-header-middle-section">
-            Checkout (<a className="return-to-home-link" href="index.html">3 items</a>)
+            Checkout (<a className="return-to-home-link" href="/">3 items</a>)
           </div>
 
           <div className="checkout-header-right-section">
