@@ -1,6 +1,6 @@
 import React from 'react'
-import './CheckoutHeader.css'
-import './CheckoutPage.css'
+import './checkout/CheckoutHeader.css'
+import './checkout/CheckoutPage.css'
 
 export const CheckoutPage = () => {
   return (
