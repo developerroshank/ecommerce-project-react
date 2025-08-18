@@ -1,10 +1,13 @@
 import React from 'react'
+import { Header } from '../components/Header'
 import './OrdersPage.css'
 
 export const OrdersPage = () => {
   return (
     <>
       <title>Orders</title>
+
+      <Header />
 
       <div class="orders-page">
         <div class="page-title">Your Orders</div>
