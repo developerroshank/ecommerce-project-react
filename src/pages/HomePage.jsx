@@ -3,26 +3,20 @@ import axios from 'axios'
 import { Header } from '../components/Header'
 import './HomePage.css'
 
-export const HomePage = () => {
+export const HomePage = ({ cart }) => {
 
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     axios.get('/api/products')
       .then((response) => {
         setProducts(response.data);
       });
-
-    axios.get('http://localhost:3000/api/cart-items')
-      .then((response) => {
-        setCart(response.data);
-      })
   }, []);
 
   return (
     <>
-      <link rel="icon" type="image/svg+xml" href="/images/icons/home-icon.png" />
+      <link rel="icon" type="image/svg+xml" href="/images/icons/home-i.png" />
 
       <title>Ecommerce Project</title>
 
