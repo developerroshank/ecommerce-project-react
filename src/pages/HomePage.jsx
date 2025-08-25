@@ -17,8 +17,6 @@ export const HomePage = ({ cart }) => {
 
   return (
     <>
-      <link rel="icon" type="image/svg+xml" href="/images/icons/home-i.png" />
-
       <title>Ecommerce Project</title>
 
       <Header cart={cart} />
