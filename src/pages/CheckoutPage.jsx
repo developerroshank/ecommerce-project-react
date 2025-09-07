@@ -17,7 +17,7 @@ export const CheckoutPage = ({ cart }) => {
       .then((response) => {
         setDeliveryOptions(response.data);
       });
-    
+
     axios.get('/api/payment-summary')
       .then((response) => {
         setPaymentSummary(response.data)
@@ -61,7 +61,7 @@ export const CheckoutPage = ({ cart }) => {
               return (
                 <div key={cartItem.productId} className="cart-item-container">
                   <div className="delivery-date">
-                    Delivery date: {dayjs(selectedDevileryOption.estimatedDeliveryTimeMs).format('dddd, MMMM D')} 
+                    Delivery date: {dayjs(selectedDevileryOption.estimatedDeliveryTimeMs).format('dddd, MMMM D')}
                   </div>
 
                   <div className="cart-item-details-grid">
@@ -98,12 +98,12 @@ export const CheckoutPage = ({ cart }) => {
                         let priceString = 'FREE Shipping';
 
                         if (deliveryOption.priceCents > 0) {
-                          priceString  = `${formatMoney(deliveryOption.priceCents)} - Shipping`;
+                          priceString = `${formatMoney(deliveryOption.priceCents)} - Shipping`;
                         }
 
                         return (
                           <div key={deliveryOption.id} className="delivery-option">
-                            <input type="radio" 
+                            <input type="radio"
                               checked={deliveryOption.id === cartItem.deliveryOptionId}
                               className="delivery-option-input"
                               name={`delivery-option-${cartItem.productId}`} />
@@ -133,7 +133,7 @@ export const CheckoutPage = ({ cart }) => {
 
             {paymentSummary && (
               <>
-              
+
                 <div className="payment-summary-row">
                   <div>Items ({paymentSummary.totalItems}):</div>
                   <div className="payment-summary-money">
