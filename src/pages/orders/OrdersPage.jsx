@@ -2,8 +2,8 @@ import React, { Fragment } from 'react'
 import axios from 'axios'
 import dayjs from 'dayjs';
 import { useState, useEffect } from 'react';
-import { Header } from '../components/Header'
-import { formatMoney } from '../utils/money';
+import { Header } from '../../components/Header'
+import { formatMoney } from '../../utils/money';
 import './OrdersPage.css'
 
 export const OrdersPage = ({ cart }) => {
